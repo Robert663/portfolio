@@ -1,7 +1,72 @@
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Typography,
+  CardActions,
+  Grid,
+  Slide,
+} from '@mui/material';
+import projects from '../../projects.json';
+
 export const Projects = () => {
-    return(
-    <>
-    
-    </>
-    )
-}
+  return (
+    <Box
+      minHeight="80vh"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="column"
+    >
+      <Typography variant="h3" mb={4}>
+        Principais projetos
+      </Typography>
+      
+      <Slide direction='right' in timeout={1000}>
+        <Grid width="65%" container spacing={4}>
+          {projects.map((x, y) => (
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  minWidth: 150,
+                  minHeight: 250,
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  flexDirection: 'column',
+                }}
+              >
+                <CardContent>
+                  <Typography variant="h5" component="div">
+                    {x.title}
+                  </Typography>
+                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    {x.description}
+                  </Typography>
+                </CardContent>
+                <CardActions sx={{ justifyContent: 'end' }}>
+                  <Button
+                    variant="contained"
+                    href={x.site}
+                    target="blank"
+                    size="small"
+                  >
+                    SITE
+                  </Button>
+                  <Button
+                    variant="contained"
+                    href={x.git}
+                    target="blank"
+                    size="small"
+                  >
+                    GITHUB
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Slide>
+    </Box>
+  );
+};
