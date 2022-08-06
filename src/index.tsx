@@ -4,7 +4,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { AppThemeContextProvider } from './context/ThemeContext';
 import { Header } from './components/Header/index';
-
+import { ToastContainer } from 'react-toastify';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -12,6 +12,7 @@ root.render(
   <AppThemeContextProvider>
     <React.StrictMode>
       <BrowserRouter>
+      <ToastContainer />
         <Header />
         <App />
       </BrowserRouter>
