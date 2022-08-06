@@ -51,8 +51,8 @@ export const Home = () => {
           {IMAGES &&
             IMAGES.map(
               (images) => (
-                <Grid item md={1} xs={2}>
-                  <Paper key={images.id as number}>
+                <Grid  key={images.id as number} item md={1} xs={2}>
+                  <Paper >
                     <Image src={images.image as string} />
                   </Paper>
                 </Grid>
