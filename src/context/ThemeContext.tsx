@@ -9,6 +9,7 @@ import {
 import { ThemeProvider } from '@mui/material';
 import { Darktheme } from '../theme/dark';
 import { Lighttheme } from '../theme/light';
+
 interface Props {
   children?: React.ReactNode;
 }
@@ -22,6 +23,7 @@ const ThemeContext = createContext({} as ITheme);
 export const useThemeContext = () => {
   return useContext(ThemeContext);
 };
+
 export const AppThemeContextProvider: React.FC<Props> = ({ children }) => {
   const [name, setName] = useState<'light' | 'dark'>('light');
   const toggleTheme = useCallback(() => {
@@ -34,7 +36,11 @@ export const AppThemeContextProvider: React.FC<Props> = ({ children }) => {
   return (
     <ThemeContext.Provider value={{ name, toggleTheme }}>
       <ThemeProvider theme={theme}>
-        <Box height="100vh" width="100vw" bgcolor={theme.palette.background.default}>
+        <Box
+          height="100vh"
+          width="100vw"
+          bgcolor={theme.palette.background.default}
+        >
           {children}
         </Box>
       </ThemeProvider>
