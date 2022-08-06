@@ -1,0 +1,38 @@
+[
+{"id":0,
+ "image": "/images/html5.svg"
+},
+{"id":1,
+ "image": "/images/css.svg"
+},
+{"id":2,
+ "image": "/images/javascript.svg"
+},
+{"id":3,
+ "image": "/images/react.svg"
+},
+{"id":4,
+ "image": "/images/typescript.svg"
+},
+{"id":5,
+ "image": "/images/api.svg"
+},
+{"id":6,
+ "image": "/images/docker.svg"
+},
+{"id":7,
+ "image": "/images/node-js.svg"
+},
+{"id":8,
+ "image": "/images/python.svg"
+},
+{"id":9,
+ "image": "/images/django.svg"
+},
+{"id":10,
+ "image": "/images/postgresql.svg"
+},
+{"id": 11,
+ "image": "images/git.svg"
+}
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "title": "Ubeer",
+    "site": "https://ubeer.vercel.app/",
+    "description": "Uma aplicação com a intenção de ajudar condutores que não estão em estado de dirigir à chegarem em suas casas.",
+    "git": "https://github.com/Robert663/ubeer"
+  },
+  {
+    "id": 1,
+    "title": "Hamburgueria",
+    "site": "https://hamburgueria-two-phi.vercel.app/",
+    "description": "Um site utilizando react para matar a fome do usuário.",
+    "git": "https://github.com/Robert663/hamburgueria/"
+  },
+  {
+    "id": 2,
+    "title": "KenzieHub",
+    "site": "https://kenziehub-je5gug9oi-robert663.vercel.app/",
+    "description": "Uma aplicação que valida o token do usuário criado e permite a criação de matérias.",
+    "git": "https://github.com/Robert663/react-entrega-s2-kenzie-hub-Robert663"
+  },
+  {
+    "id": 3,
+    "title": "Fotos Daqui",
+    "site": "https://fotosdaqui.vercel.app/",
+    "description": "Um app que consome uma API e utiliza sua geolocalização para pesquisar palavras que tenham relação ao ambiente onde você está.",
+    "git": "https://github.com/Robert663/m2-entrega-fotos-daqui-sprint-3a-Robert663"
+  },
+  {
+    "id": 4,
+    "title": "Kenziefood",
+    "site": "https://kenziefood-nu.vercel.app/",
+    "description": "Uma aplicação no estilo e-commerce para comprar alimentos de forma fácil.",
+    "git": "https://github.com/Robert663/api-kenziefood-m2-Robert663"
+  },
+  {
+    "id": 5,
+    "title": "KenKurso",
+    "site": "https://app.swaggerhub.com/apis/lucasdutradev/KenKurso/1.0.0#/user/ListUsers",
+    "description": "Um projeto backend para cadastrar alunos, professores, matérias, aulas, semestres e mais.",
+    "git": "https://github.com/Robert663/KenKurso"
+  }
+]
