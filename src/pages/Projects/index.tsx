@@ -25,8 +25,8 @@ export const Projects = () => {
       
       <Slide direction='right' in timeout={1000}>
         <Grid width="65%" container spacing={4}>
-          {projects.map((x, y) => (
-            <Grid item xs={12} md={4}>
+          {projects.map((project) => (
+            <Grid item xs={12} md={4} key={project.id}>
               <Card
                 sx={{
                   minWidth: 150,
@@ -38,16 +38,16 @@ export const Projects = () => {
               >
                 <CardContent>
                   <Typography variant="h5" component="div">
-                    {x.title}
+                    {project.title}
                   </Typography>
                   <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    {x.description}
+                    {project.description}
                   </Typography>
                 </CardContent>
                 <CardActions sx={{ justifyContent: 'end' }}>
                   <Button
                     variant="contained"
-                    href={x.site}
+                    href={project.site}
                     target="blank"
                     size="small"
                   >
@@ -55,7 +55,7 @@ export const Projects = () => {
                   </Button>
                   <Button
                     variant="contained"
-                    href={x.git}
+                    href={project.git}
                     target="blank"
                     size="small"
                   >
