@@ -9,7 +9,6 @@ import {
   IconButton,
   List,
   ListItem,
-  ListItemButton,
   ListItemText,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -18,7 +17,7 @@ import FlashlightOnOutlinedIcon from '@mui/icons-material/FlashlightOnOutlined';
 import { useThemeContext } from '../../context/ThemeContext';
 import { useTheme } from '@mui/material';
 import { useState } from 'react';
-const navItems = ['home', 'sobre', 'certificados', 'projetos', 'contato'];
+const navItems = ['home', 'sobre', 'projetos', 'contato'];
 
 export const Header = () => {
   const { toggleTheme } = useThemeContext();
@@ -32,34 +31,34 @@ export const Header = () => {
     <Box
       width="200px"
       display="flex"
-      style={{ alignItems: 'center', flexDirection: 'column' }}
+      style={{ alignItems: 'center', flexDirection: 'column', flexGrow: 1 }}
     >
       <Toolbar />
-      <List>
-        {navItems.map((item, index) => (
-          <ListItem key={index} disablePadding>
-            <ListItemButton>
-              <Link to={`/${item}`}>
-              <ListItemText primary={item} />
-              </Link>
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Toolbar />
-      <Box>
-        <IconButton onClick={toggleTheme} color="secondary">
-          <FlashlightOnOutlinedIcon />
-        </IconButton>
+      <Box flex={1}>
+        <List>
+          {navItems.map((item, index) => (
+            <ListItem key={index} disablePadding>
+              <Button>
+                <Link style={{ textDecoration: 'none' }} to={`/${item}`}>
+                  <ListItemText primary={item} />
+                </Link>
+              </Button>
+            </ListItem>
+          ))}
+        </List>
       </Box>
+      <IconButton onClick={toggleTheme} color="secondary">
+        <FlashlightOnOutlinedIcon />
+      </IconButton>
+      <Toolbar />
     </Box>
   );
 
   return (
-    <Box height='48px'>
+    <Box height="48px">
       <AppBar component="nav">
         <Toolbar variant="dense">
-          <Typography sx={{ flexGrow: 1 }}>Teste</Typography>
+          <Typography sx={{ flexGrow: 1, fontSize: 50, fontFamily: 'Sacramento, cursive' }}>Rc</Typography>
           {matches ? (
             <>
               <Drawer
@@ -70,20 +69,22 @@ export const Header = () => {
               >
                 {drawer}
               </Drawer>
-              <IconButton onClick={handleDrawerToggle}>
-                <MenuIcon />
-              </IconButton>
+              <Box>
+                <IconButton onClick={handleDrawerToggle}>
+                  <MenuIcon />
+                </IconButton>
+              </Box>
             </>
           ) : (
             <>
               <IconButton onClick={toggleTheme} color="secondary">
                 <FlashlightOnOutlinedIcon />
               </IconButton>
-              <Box>
+              <Box mr={5}>
                 {navItems.map((item, index) => (
                   <Button key={index} color="secondary">
-                    <Link to={`/${item}`}>
-                    {item}
+                    <Link style={{ textDecoration: 'none' }} to={`/${item}`}>
+                      {item}
                     </Link>
                   </Button>
                 ))}
