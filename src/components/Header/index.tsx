@@ -58,7 +58,7 @@ export const Header = () => {
     <Box height="48px">
       <AppBar component="nav">
         <Toolbar variant="dense">
-          <Typography sx={{ flexGrow: 1, fontSize: 50, fontFamily: 'Sacramento, cursive' }}>Rc</Typography>
+          <Typography sx={{ flexGrow: 1, fontSize: 30, fontFamily: 'Sacramento, cursive' }}>Rc</Typography>
           {matches ? (
             <>
               <Drawer
