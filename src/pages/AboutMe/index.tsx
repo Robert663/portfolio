@@ -70,6 +70,7 @@ export function AboutMe() {
                 <CardMedia
                   component="img"
                   height="350"
+                  sx={{width: 530.45}}
                   image="./certificates/Kenzie.png"
                 />
                 <CardActions>
