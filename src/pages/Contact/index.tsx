@@ -59,7 +59,7 @@ export const Contact = () => {
               sx={{ mb: 3 }}
               required
               label="Seu email"
-              name="email"
+              name="from_email"
               type="email"
             />
             <TextField fullWidth required label="Assunto" name="from_name" />
