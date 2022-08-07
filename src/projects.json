@@ -3,42 +3,42 @@
     "id": 0,
     "title": "Ubeer",
     "site": "https://ubeer.vercel.app/",
-    "description": "Uma aplicação com a intenção de ajudar condutores que não estão em estado de dirigir à chegarem em suas casas.",
+    "description": "O app consome a API do google maps. Feito com react + typescript.",
     "git": "https://github.com/Robert663/ubeer"
   },
   {
     "id": 1,
     "title": "Hamburgueria",
     "site": "https://hamburgueria-two-phi.vercel.app/",
-    "description": "Um site utilizando react para matar a fome do usuário.",
+    "description": "Um app estilo e-commerce utilizando react com um sistema de carrinho.",
     "git": "https://github.com/Robert663/hamburgueria/"
   },
   {
     "id": 2,
     "title": "KenzieHub",
     "site": "https://kenziehub-je5gug9oi-robert663.vercel.app/",
-    "description": "Uma aplicação que valida o token do usuário criado e permite a criação de matérias.",
+    "description": "Um app que valida o token do usuário e permite a criação de matérias.",
     "git": "https://github.com/Robert663/react-entrega-s2-kenzie-hub-Robert663"
   },
   {
     "id": 3,
     "title": "Fotos Daqui",
     "site": "https://fotosdaqui.vercel.app/",
-    "description": "Um app que consome uma API e utiliza sua geolocalização para pesquisar palavras que tenham relação ao ambiente onde você está.",
+    "description": "O app usa sua localização e faz buscas relacionadas a sua região.",
     "git": "https://github.com/Robert663/m2-entrega-fotos-daqui-sprint-3a-Robert663"
   },
   {
     "id": 4,
     "title": "Kenziefood",
     "site": "https://kenziefood-nu.vercel.app/",
-    "description": "Uma aplicação no estilo e-commerce para comprar alimentos de forma fácil.",
+    "description": "Um app estilo e-commerce para comprar alimentos de forma fácil.",
     "git": "https://github.com/Robert663/api-kenziefood-m2-Robert663"
   },
   {
     "id": 5,
     "title": "KenKurso",
     "site": "https://app.swaggerhub.com/apis/lucasdutradev/KenKurso/1.0.0#/user/ListUsers",
-    "description": "Um projeto backend para cadastrar alunos, professores, matérias, aulas, semestres e mais.",
+    "description": "Um app backend para cadastrar alunos, professores, matérias, aulas...",
     "git": "https://github.com/Robert663/KenKurso"
   }
 ]
