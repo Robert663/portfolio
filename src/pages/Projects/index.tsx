@@ -24,15 +24,11 @@ export const Projects = () => {
       </Typography>
       
       <Slide direction='right' in timeout={1000}>
-        <Grid width="65%" container spacing={4} justifyContent='center'>
+        <Grid width="85%" container spacing={4} justifyContent='center'>
           {projects.map((project) => (
-            <Grid item xs={12} sm={6} md={5} lg={4} key={project.id}>
+            <Grid item xs={12} sm={7} md={7} lg={4} key={project.id}>
               <Card
                 sx={{
-                  minWidth: 150,
-                  minHeight: 200  ,
-                  maxHeight: 170,
-                  overflow: 'scroll',
                   display: 'flex',
                   justifyContent: 'space-between',
                   flexDirection: 'column',
