@@ -24,19 +24,21 @@ export const Projects = () => {
       </Typography>
       
       <Slide direction='right' in timeout={1000}>
-        <Grid width="65%" container spacing={4}>
+        <Grid width="65%" container spacing={4} justifyContent='center'>
           {projects.map((project) => (
-            <Grid item xs={12} md={4} key={project.id}>
+            <Grid item xs={12} sm={6} md={5} lg={4} key={project.id}>
               <Card
                 sx={{
                   minWidth: 150,
-                  minHeight: 250,
+                  minHeight: 200  ,
+                  maxHeight: 170,
+                  overflow: 'scroll',
                   display: 'flex',
                   justifyContent: 'space-between',
                   flexDirection: 'column',
                 }}
               >
-                <CardContent>
+                <CardContent >
                   <Typography variant="h5" component="div">
                     {project.title}
                   </Typography>
