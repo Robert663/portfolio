@@ -39,6 +39,7 @@ export const AppThemeContextProvider: React.FC<Props> = ({ children }) => {
         <Box
           height="100vh"
           width="100vw"
+          overflow="auto"
           bgcolor={theme.palette.background.default}
         >
           {children}
