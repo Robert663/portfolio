@@ -10,7 +10,7 @@ import {
   Grid,
   Grow,
 } from '@mui/material';
-export const Home = () => {
+export const Home = () =>  {
   return (
     <>
       <Container>
@@ -22,7 +22,7 @@ export const Home = () => {
                 avatar={
                   <Avatar
                     sx={{ width: 200, height: 200 }}
-                    src="./profile.png"
+                    src='https://media-exp1.licdn.com/dms/image/D4D35AQEPf7lVV5Y6qw/profile-framedphoto-shrink_200_200/0/1651234212692?e=1660482000&v=beta&t=1ziVwfdqyw57oIuDNZo11llSKPJx-u2MmmEnHbCWc2I'
                   />
                 }
                 title={
