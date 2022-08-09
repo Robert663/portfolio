@@ -8,10 +8,10 @@
   },
   {
     "id": 1,
-    "title": "Hamburgueria",
-    "site": "https://hamburgueria-two-phi.vercel.app/",
-    "description": "Um app estilo e-commerce utilizando react com um sistema de carrinho.",
-    "git": "https://github.com/Robert663/hamburgueria/"
+    "title": "PetCTRL",
+    "site": "https://pet-ctrl-up.herokuapp.com/",
+    "description": "Um app backend para cadastrar pets, donos, requisitar serviços....",
+    "git": "https://github.com/Robert663/petctrl"
   },
   {
     "id": 2,
