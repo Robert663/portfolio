@@ -21,7 +21,7 @@ export const Home = () =>  {
                 sx={{ minWidth: '70vw' }}
                 avatar={
                   <Avatar
-                    sx={{ width: 200, height: 200 }}
+                    sx={{ width: 160, height: 160 }}
                     src='https://media-exp1.licdn.com/dms/image/D4D35AQEPf7lVV5Y6qw/profile-framedphoto-shrink_200_200/0/1651234212692?e=1660482000&v=beta&t=1ziVwfdqyw57oIuDNZo11llSKPJx-u2MmmEnHbCWc2I'
                   />
                 }
