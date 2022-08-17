@@ -22,7 +22,7 @@ export const Home = () =>  {
                 avatar={
                   <Avatar
                     sx={{ width: 160, height: 160 }}
-                    src='https://media-exp1.licdn.com/dms/image/D4D35AQEPf7lVV5Y6qw/profile-framedphoto-shrink_200_200/0/1651234212692?e=1660482000&v=beta&t=1ziVwfdqyw57oIuDNZo11llSKPJx-u2MmmEnHbCWc2I'
+                    src='/perfil.jpeg'
                   />
                 }
                 title={
