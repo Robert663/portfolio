@@ -4,5 +4,8 @@
 },
 {"id":1,
  "image": "/certificates/Multi.png"
+},
+{"id":2,
+"image": "/certificates/Fullstack.png"
 }
 ]
