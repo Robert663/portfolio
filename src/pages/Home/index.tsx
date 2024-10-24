@@ -33,7 +33,7 @@ export const Home = () =>  {
                       através disso, complementar o que venho aprendendo e
                       evoluir na empresa em que estiver atuando e contribuir o
                       máximo possível. Sou desenvolvedor Fullstack formado pela
-                      Kenzie Academy Brasil.
+                      Kenzie Academy Brasil e graduando em Engenharia de Software pela UNOPAR.
                     </Typography>
                   </Container>
                 }
